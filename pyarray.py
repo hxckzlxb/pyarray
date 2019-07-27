@@ -38,7 +38,7 @@ def arrLoad(file):
 
 def addArray(arr1, arr2):
 	"""
-	Adds the values of the first array, list or tuple to 	the second and returns a new array, list or tuple
+	Adds the values of the first array, list or tuple to the second and returns a new array, list or tuple
 	(The arrays must be equal size)
 	"""
 	newarr = []
@@ -53,4 +53,22 @@ def subsArray(arr1, arr2):
 	newarr = []
 	for i in range(len(arr1)):
 		newarr.append(arr1[i] - arr2[i])
+	return newarr
+	
+def multArray(arr1,arr2):
+	"""
+	Same as addArray, but multiplicates values
+	"""
+	newarr=[]
+	for i in range(len(arr1)):
+		newarr.append(arr1[i] * arr2[i])
+	return newarr
+
+def divArray(arr1,arr2):
+	"""
+	Same as addArray, but divides values
+	"""
+	newarr=[]
+	for i in range(len(arr1)):
+		newarr.append(arr1[i] / arr2[i])
 	return newarr
