@@ -1,7 +1,8 @@
 #This module allows operations with arrays, lists and tuples
 def searchNum(list, number):
 	"""
-	Search numbers in arrays, lists or tuples. 				Returns number and index (number,index)
+	Search numbers in arrays, lists or tuples. 				
+        Returns number and index (number,index)
 	"""
 	index = 0
 	for i in list:
