@@ -17,7 +17,7 @@ def arrSave(file, array):
 	Saves arrays, lists or tuples in a text file
 	"""
 	try:
-		f = open(file, "w")
+		f = open(file, "a")
 		f.write(str(array))
 		f.close()
 		print("The array was succesfully saved")
