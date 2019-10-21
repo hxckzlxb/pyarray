@@ -72,3 +72,16 @@ def divArray(arr1,arr2):
 	for i in range(len(arr1)):
 		newarr.append(arr1[i] / arr2[i])
 	return newarr
+
+def matrixToList(mat):
+	"""
+	Gets all data from a matrix or bidimensional lists and return it as a regular list
+	"""
+	new = []
+	for i in mat:
+		if type(i) == list:
+			for k in i:
+				new.append(k)
+		else:
+			new.append(i)
+	return new
