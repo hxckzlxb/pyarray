@@ -12,6 +12,20 @@ def searchNum(list, number):
 		else:
 			pass
 
+def searchWord(list, word):
+	"""
+	Searchs words in arrays, lists or tuples.
+	Returns word and index (word, index)
+	Literally, does the same as searchNum
+	"""
+	index = 0
+	for i in list:
+		index += 1
+		if i == word:
+			return i, index - 1
+		else:
+			pass
+			
 def arrSave(file, array):
 	"""
 	Saves arrays, lists or tuples in a text file
